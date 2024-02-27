@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>jQuery 다운로드</title>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-Latest.js"></script>
+		<script>
+		/*
+				1. jQuery(element) : element를 jQuery 객체로 만듭니다.
+				
+				2. ready(fucntion) : DOM이 완전히 로드되었을 때 function을 실행합니다.
+				
+				3. jQuery() 대신 $()를 사용할 수 있습니다.
+				   작성법)
+				   		(1) $(document).ready(); // 사용할 준비가 되면 (onload랑 비슷)
+				   		(2) 1번 작성 후 ready()의 ()사이에 커서를 놓습니다.
+				   		(3) function() {}를 작성 후 {}사이에 커서를 놓고 엔터를 누른 뒤 코드 작성합니다.
+				   			=> 문서가 준비되면 매개변수로 넣은 롤백 함수를 실행하라는 의미 입니다.
+		
+		*/
+		
+		jQuery(document).ready(function() {
+			console.log("helo jQuery");
+		});
+
+		$(document).ready(function() {
+			console.log("helo $");
+		});
+			
+		</script>
+	</body>
+</html>
+	

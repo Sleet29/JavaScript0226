@@ -1,0 +1,22 @@
+<!-- 두 가지 클래스 선택자 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    
+    <script>
+    	$(document).ready(function() {
+    		$('.item, .select').css('color','orange');
+    		// $('.item, .select').css('color','orange'); 모두 다 오랜지색으로
+    		// $('.item, select').css('color','orange');
+    			// 마침표 대신 쉼표도 가능 
+    	});
+    </script>
+</head>
+<body>
+	<h1 class="items select">class="items select"</h1>
+	<h1 class="item select">class="item select":나만 오렌지색 적용되요.</h1>
+	<h1 class="item">class="item"</h1>
+</body>
+</html>

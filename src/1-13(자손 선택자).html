@@ -1,0 +1,46 @@
+<!-- 두 가지 클래스 선택자 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    
+    <script>
+    	$(document).ready(function() {
+    		//$('div>ul:first-child').css('color','red');
+    		//$('div>ul:first-child > li').css('color','red');
+    		//$('div>ul:nth-child(1)>li').css('color','red');
+    		
+    		$('div').css('color','red');
+    		$('p').css('color','black');
+    		$('div>ul:nth-child(2)>li').css('color','black');
+    		
+    		// $('.item, .select').css('color','orange'); 모두 다 오랜지색으로
+    		// $('.item, select').css('color','orange');
+    			// 마침표 대신 쉼표도 가능 
+    	});
+    </script>
+</head>
+<body>
+	<!-- 
+	1. A E - A요소에 포함되어 있는 요소 중 E요소를 선택한다.(후손요소)
+	2. A>E - A요소의 바로 아래에 포함되어 잇는 E요소를 선택한다.(자식요소)
+	3. A+E - A요소의 다음으로 나오는 E요소를 선택한다.(형제요소)
+	 -->
+			<div>
+					<ul>
+							<li>Cat</li>
+							<li>Dog</li>
+							<li>Elephant</li>
+					</ul>
+			</div>
+			<div>
+					<p>아래는 적용하지 마세요</p>
+					<ul>
+							<li>고양이</li>
+							<li>개</li>
+							<li>코끼리</li>
+					</ul>
+			</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!-- 두 가지 클래스 선택자 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    
+    <script>
+    	$(document).ready(function() {
+			/* 후손 선택자
+			   div 태그의 후손 ul에 스타일이 적용되었음 */
+    		$('div').css('color','red');
+    		$('ul>li').css('color','black');
+    		
+    	});
+    </script>
+</head>
+<body>
+			<div>
+					<ul>
+							<li>Cat</li>
+							<li>Dog</li>
+							<li>Elephant</li>
+					</ul>
+			</div>
+			<div>
+					<p>아래는 적용하지 마세요</p>
+					<ul>
+							<li>고양이</li>
+							<li>개</li>
+							<li>코끼리</li>
+					</ul>
+			</div>
+</body>
+</html>
